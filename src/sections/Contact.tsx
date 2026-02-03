@@ -283,12 +283,18 @@ const Contact = () => {
             </p>
 
             <div className="flex gap-6">
-              {['Privacy Policy', 'Terms of Service', 'Sitemap'].map((link, index) => (
-                <a key={index} href={link === 'Sitemap' ? '/sitemap.xml' : '#'}
-                  className="font-opensans text-sm text-gray-500 dark:text-white/40 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
-                  {link}
-                </a>
-              ))}
+              <a href="/privacy-policy"
+                className="font-opensans text-sm text-gray-500 dark:text-white/40 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
+                Privacy Policy
+              </a>
+              <a href="/terms-of-service"
+                className="font-opensans text-sm text-gray-500 dark:text-white/40 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
+                Terms of Service
+              </a>
+              <a href="/sitemap.xml"
+                className="font-opensans text-sm text-gray-500 dark:text-white/40 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
+                Sitemap
+              </a>
             </div>
           </div>
         </div>

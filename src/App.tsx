@@ -10,6 +10,8 @@ import IntroOverlay from './components/IntroOverlay';
 import FloatingCTA from './components/FloatingCTA';
 import ExitIntentPopup from './components/ExitIntentPopup';
 import SocialProofToast from './components/SocialProofToast';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 import { useTheme } from './hooks/useTheme';
 import './App.css';
 
@@ -36,6 +38,27 @@ function App() {
   const { mounted } = useTheme();
   const scrollTriggersRef = useRef<ScrollTrigger[]>([]);
   const [introComplete, setIntroComplete] = useState(false);
+
+  // Check current path for routing
+  const path = window.location.pathname;
+  const isPrivacyPolicy = path === '/privacy-policy';
+  const isTermsOfService = path === '/terms-of-service';
+  const isSitemap = path === '/sitemap.xml';
+
+  // Redirect sitemap.xml to the actual sitemap file
+  if (isSitemap) {
+    window.location.href = '/sitemap.xml';
+    return null;
+  }
+
+  // Render standalone pages without the main layout
+  if (isPrivacyPolicy) {
+    return <PrivacyPolicy />;
+  }
+
+  if (isTermsOfService) {
+    return <TermsOfService />;
+  }
 
   useEffect(() => {
     const ctx = gsap.context(() => {
