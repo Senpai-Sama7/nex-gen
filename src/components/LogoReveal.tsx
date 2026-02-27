@@ -129,8 +129,8 @@ const LogoReveal = () => {
   }, []);
 
   const currentStyle = designStyles[currentStyleIndex];
-  const nexPart = displayText.slice(0, 3);
-  const genPart = displayText.slice(3);
+  const nexPart = displayText.slice(0, 7);
+  const genPart = displayText.slice(7);
 
   return (
     <div className="flex flex-col items-center gap-3">

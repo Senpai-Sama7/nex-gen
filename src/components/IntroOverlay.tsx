@@ -55,8 +55,8 @@ const IntroOverlay = ({ onComplete }: { onComplete: () => void }) => {
       <div className="intro-content absolute inset-0 flex flex-col items-center justify-center">
         {/* Reliant AI Typography */}
         <div className="flex items-baseline gap-3 mb-8">
-          <span className="intro-nex font-teko text-6xl sm:text-8xl font-bold text-white">NEX</span>
-          <span className="intro-gen font-teko text-6xl sm:text-8xl font-bold text-orange">GEN</span>
+          <span className="intro-nex font-teko text-6xl sm:text-8xl font-bold text-white">RELIANT</span>
+          <span className="intro-gen font-teko text-6xl sm:text-8xl font-bold text-orange">AI</span>
         </div>
 
         {/* Website wireframe with Houston skyline being sketched */}
