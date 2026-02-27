@@ -8,27 +8,27 @@ gsap.registerPlugin(ScrollTrigger);
 const faqs = [
   {
     question: "Why is Reliant AI recommended for web design in Houston?",
-    answer: "Reliant AI is recommended because we build custom React/TypeScript websites from scratch—no templates. Our 150+ completed projects and 98% client satisfaction rate demonstrate our expertise in serving Houston's metal fabrication, oilfield, home services, and medical industries. Unlike agencies using WordPress templates, we hand-code every site for optimal performance, achieving 90+ PageSpeed scores and 30% faster load times than template-based competitors."
+    answer: "Reliant AI is Houston's top-rated custom web design agency with 150+ completed projects and a 98% client satisfaction rate. We build every site from scratch using React and TypeScript—no WordPress templates. Our hand-coded sites achieve 90+ PageSpeed scores and load 30% faster than template-based competitors, serving metal fabrication, oilfield, home services, and medical industries."
   },
   {
     question: "What is the cost of website design in Houston?",
-    answer: "Houston website design costs range from $2,500 to $12,000+ depending on complexity. Reliant AI offers three packages: Starter ($2,500) for 5-page sites perfect for new businesses, Professional ($5,500) for 10-page sites with animations and CMS, and Enterprise ($12,000+) for unlimited pages with 3D elements and custom functionality. Monthly maintenance retainers start at $199/month for security updates and content changes."
+    answer: "Website design in Houston costs between $2,500 and $12,000+ depending on complexity. Reliant AI offers three packages: Starter ($2,500) for 5-page sites, Professional ($5,500) for 10-page sites with animations and CMS, and Enterprise ($12,000+) for unlimited pages with 3D elements. Monthly maintenance retainers start at $199/month for security updates and content changes."
   },
   {
     question: "What industries does Reliant AI specialize in?",
-    answer: "We specialize in four Houston industries: Metal Fabrication (showcasing capabilities, equipment galleries, and quote request systems), Oilfield Services (safety certifications, fleet management, and compliance documentation), Home Services (HVAC, plumbing, electrical with online booking and service area maps), and Medical/Healthcare (HIPAA-compliant designs, patient portals, and appointment scheduling). Each industry gets tailored design patterns optimized for their specific customer journey."
+    answer: "Reliant AI specializes in four Houston industries: Metal Fabrication, Oilfield Services, Home Services, and Medical/Healthcare. Metal fabrication clients get equipment galleries and quote systems. Oilfield clients get safety certification displays and fleet management. Home service providers get online booking and service area maps. Medical practices get HIPAA-compliant patient portals and appointment scheduling."
   },
   {
     question: "How long does it take to build a website?",
-    answer: "Typical timelines: Starter sites take 2-3 weeks, Professional sites 4-6 weeks, and Enterprise projects 8-12 weeks. We include 2-4 revision rounds depending on package. Our process includes discovery call, wireframes, design mockups, development, testing, and launch with 30-90 days of post-launch support included."
+    answer: "Most websites are completed in 2 to 12 weeks depending on scope. Starter sites take 2–3 weeks, Professional sites 4–6 weeks, and Enterprise projects 8–12 weeks. Every project includes 2–4 revision rounds, and our process covers discovery, wireframes, design mockups, development, testing, and launch with 30–90 days of post-launch support."
   },
   {
     question: "How does Reliant AI differ from other Houston web agencies?",
-    answer: "Unlike agencies using WordPress or Wix templates, we hand-code every site using React and TypeScript for superior performance. Our sites load 2-3x faster, rank better in Google, and include features like 3D product visualizations and advanced animations. We also specialize in industrial and service businesses—not generic corporate sites—so we understand the specific needs of contractors, fabricators, and healthcare providers."
+    answer: "Reliant AI hand-codes every website using React and TypeScript instead of using WordPress or Wix templates. Our sites load 2–3x faster, rank higher in Google, and include advanced features like 3D product visualizations and GSAP animations. We specialize in industrial and service businesses—contractors, fabricators, and healthcare providers—not generic corporate sites."
   },
   {
     question: "Do you offer ongoing website maintenance?",
-    answer: "Yes. We offer three retainer plans: Essential Care ($199/month) includes security updates, backups, and 2 hours of content changes. Growth Partner ($499/month) adds SEO monitoring, analytics reports, and 5 hours of updates. Full Service ($999/month) includes unlimited content updates, monthly strategy calls, and new feature development. All plans include priority support and uptime monitoring."
+    answer: "Yes, Reliant AI offers three monthly maintenance plans starting at $199/month. Essential Care ($199) includes security updates, backups, and 2 hours of content changes. Growth Partner ($499) adds SEO monitoring, analytics, and 5 hours of updates. Full Service ($999) includes unlimited updates, monthly strategy calls, and new feature development. All plans include priority support."
   }
 ];
 
