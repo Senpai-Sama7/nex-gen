@@ -71,11 +71,19 @@
         {
           "key": "Permissions-Policy",
           "value": "camera=(), microphone=(), geolocation=(self), interest-cohort=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
         }
       ]
     }
   ],
   "rewrites": [
+    {
+      "source": "/7bdc140905e7442da1c948053a9ef85a.txt",
+      "destination": "/7bdc140905e7442da1c948053a9ef85a.txt"
+    },
     {
       "source": "/sitemap.xml",
       "destination": "/sitemap.xml"
