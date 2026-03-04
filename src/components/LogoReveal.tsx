@@ -156,7 +156,7 @@ const LogoReveal = () => {
             )}
             {aiPart && (
               <span className={currentStyle.colorAI}>
-                {genPart}
+                {aiPart}
               </span>
             )}
           </span>
