@@ -29,8 +29,8 @@ const IntroOverlay = ({ onComplete }: { onComplete: () => void }) => {
       },
     });
 
-    tl.fromTo('.intro-nex', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'power3.out' })
-      .fromTo('.intro-gen', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'power3.out' }, '-=0.2')
+    tl.fromTo('.intro-reliant', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'power3.out' })
+      .fromTo('.intro-ai', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'power3.out' }, '-=0.2')
       .fromTo('.intro-wireframe', { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.4, ease: 'power2.out' }, '-=0.2')
       .to('.skyline-draw', { strokeDashoffset: 0, duration: 1.5, stagger: 0.08, ease: 'power1.inOut' }, '-=0.2')
       .to('.intro-progress', { scaleX: 1, duration: 1.2, ease: 'power2.inOut' }, '-=1.3')
@@ -55,8 +55,8 @@ const IntroOverlay = ({ onComplete }: { onComplete: () => void }) => {
       <div className="intro-content absolute inset-0 flex flex-col items-center justify-center">
         {/* Reliant AI Typography */}
         <div className="flex items-baseline gap-3 mb-8">
-          <span className="intro-nex font-teko text-6xl sm:text-8xl font-bold text-white">RELIANT</span>
-          <span className="intro-gen font-teko text-6xl sm:text-8xl font-bold text-orange">AI</span>
+          <span className="intro-reliant font-teko text-6xl sm:text-8xl font-bold text-white">RELIANT</span>
+          <span className="intro-ai font-teko text-6xl sm:text-8xl font-bold text-orange">AI</span>
         </div>
 
         {/* Website wireframe with Houston skyline being sketched */}
