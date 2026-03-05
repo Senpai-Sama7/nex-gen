@@ -63,6 +63,12 @@ const Testimonials = () => {
 
   const startTransition = useCallback((nextIndex: number) => {
     if (isAnimatingRef.current || nextIndex === activeIndexRef.current) {
+  const [isAnimating, setIsAnimating] = useState(false);
+  const scrollTriggersRef = useRef<ScrollTrigger[]>([]);
+  const animationTimeoutRef = useRef<number | null>(null);
+
+  const startTransition = useCallback((nextIndex: number) => {
+    if (isAnimating || nextIndex === activeIndex) {
       return;
     }
 
@@ -79,6 +85,14 @@ const Testimonials = () => {
       animationTimeoutRef.current = null;
     }, 500);
   }, []);
+    setIsAnimating(true);
+    setActiveIndex(nextIndex);
+
+    animationTimeoutRef.current = window.setTimeout(() => {
+      setIsAnimating(false);
+      animationTimeoutRef.current = null;
+    }, 500);
+  }, [activeIndex, isAnimating]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -126,6 +140,9 @@ const Testimonials = () => {
     const nextIndex = (activeIndexRef.current + 1) % testimonials.length;
     startTransition(nextIndex);
   }, [startTransition]);
+    const nextIndex = (activeIndex + 1) % testimonials.length;
+    startTransition(nextIndex);
+  }, [activeIndex, startTransition]);
 
   // Auto-rotate testimonials
   useEffect(() => {
@@ -146,8 +163,17 @@ const Testimonials = () => {
     };
   }, []);
 
+  useEffect(() => {
+    return () => {
+      if (animationTimeoutRef.current !== null) {
+        window.clearTimeout(animationTimeoutRef.current);
+      }
+    };
+  }, []);
+
   const goToPrev = () => {
     const prevIndex = (activeIndexRef.current - 1 + testimonials.length) % testimonials.length;
+    const prevIndex = (activeIndex - 1 + testimonials.length) % testimonials.length;
     startTransition(prevIndex);
   };
 
